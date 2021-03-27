@@ -1,12 +1,12 @@
-import { RsvpRounded } from '@material-ui/icons'
 import React from 'react'
+import { Button } from '@material-ui/core';
+import Icon from '@material-ui/core/Icon';
 
 const RSVPButton = ({
   activeParty, 
   handleRSVP
 }) => {
   const enabled = activeParty.filter(guest => guest.isChecked).length
-
   return <Button 
     variant='contained' 
     size='large'
@@ -16,7 +16,6 @@ const RSVPButton = ({
   >
     {`${enabled > 1 ? 'We': 'I'}'ll be there!`}
   </Button>
-  //https://mmjd.com/github/react-checkmark/
 }
 
 export default RSVPButton

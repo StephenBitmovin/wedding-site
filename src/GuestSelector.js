@@ -1,11 +1,10 @@
 import React, { Component, useState } from 'react'
 import PartySelect from './components/PartySelect'
 import SeatsAvailable from './components/SeatsAvailable'
+import RSVPButton from './components/RSVPButton'
 import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import { Button } from '@material-ui/core';
-import Icon from '@material-ui/core/Icon';
+import GuestCheckbox from './components/GuestCheckbox'
+
 import './App.css';
 import guestList from './guest-list'
 import CheckIcon from './icons/check.svg'
@@ -60,31 +59,17 @@ const GuestSelector = () => {
     .catch(e => console.error(e))
   }
 
-  const RSVPButton = () => {
-
-    const enabled = activeParty.filter(guest => guest.isChecked).length
-
-    return <Button 
-      variant='contained' 
-      size='large'
-      disabled={!enabled}
-      onClick={handleRSVP}
-      endIcon={<Icon>send</Icon>}
-    >
-      {`${enabled > 1 ? 'We': 'I'}'ll be there!`}
-    </Button>
-    //https://mmjd.com/github/react-checkmark/
-  }
-
   const partySelectProps = {parties, handleSelect}
   const RSVPButtonProps = {activeParty, handleRSVP}
+  const guestCheckboxProps = {activeParty, handleCheck}
 
   return (
     <div className="guestSelectorContainer">
 
       <PartySelect {...partySelectProps}/>
       <SeatsAvailable seats={activeParty.length}/>
-      <FormGroup row className='checkboxes'>
+      <GuestCheckbox {...guestCheckboxProps}/>
+      {/* <FormGroup row className='checkboxes'>
         {activeParty.map((guest, i) => {
           return <FormControlLabel
             key={i}
@@ -97,7 +82,7 @@ const GuestSelector = () => {
             label={guest.name}
           />
         })}
-      </FormGroup>
+      </FormGroup> */}
       {!!activeParty.length ? <RSVPButton {...RSVPButtonProps}/> : ''}
     
     </div>
