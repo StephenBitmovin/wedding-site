@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/akzhy/vara@master/src/vara.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" type='text/javascript'></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- <script src='./guest-list.js'></script> -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Mikayla and Stephen - July, 10th</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <nav>
+      <div class="nav-when">
+        <a data-scroll href='#when'>When</a>
+      </div>
+      <div class="nav-where">
+        <a data-scroll href='#where'>Where</a>
+      </div>
+      <div class="heart-container">
+        <div class="heart"></div>
+      </div>
+      <div class="nav-how">
+        <a data-scroll href='#accommodations'>Accommodations</a>
+      </div>
+      <div class="nav-rsvp">
+        <a data-scroll href='#rsvp'>RSVP</a>
+      </div>
+    </nav>
+    <div class="container title" id='when'>
+      <div class="hero-image-container">  
+        <image src="https://lh3.googleusercontent.com/9XZ6YgoLb7uNS_p2wE43dyZZ76s0hMLBfAK3NPgbtEFSy3sHntJIwSFFoDhugrQPkxP6YUbl7pDWtzKGtq6r2oplOrNUhklWwuu9NeXHqgGsJOoXWW8_4iS-bafZdihvboTgQKQO9GtMxV8Cg1TSS7i52IMyRPFZmUeaAePfPFTmB4PodfbdWDPlcC409y3qOeOY7gGNnEmbs_fAgAGNRO7baV4g1Gy6ZANKiSeFF7_EBBE80q9aLRs0p_iKZxepYtqibZn2mnbQlHed5qD5RBLWKVEf4t2-Qq9hm3yZI_vi6rQHYHys7xW0DxCEmE5JvdhHdai9UxJzg-7fafj1z22mYA6SCOQzQS8395D2d-eHOXcIrhEHs2SBLZ8RZcWg5EmY1T9pCMtFdIcNZnZ1KwRU33kbZBqmyTNXFW_NaQ0v_-ocOQXVlY_n68Fh9rP3fkAYQu3SYtnUSN01dxeY38FvD9Yhsfimr77I0PiCsCfvLc_Jw_L5yx6fw-mEjmuVlx36aaVC1Sz2g_pOFdYMV-ue_ua3ULUchKXHwP4Vr0zLvMtWzXb_M7MbId0hYcjNpT--NJ7VG__l82NrJw96B4rID0-mj4UmGocNVPPzgautYDv9-GRUYn2bxtPeFVLzi256aOtM-jzpZqgTpd9xXvzzUI59uAcVsL6sJ68R27PGacAOWQXse4gSJOqqUqigmdFvAnnv5EnYrmS9vMatvxxRew=w1600-h1067-no?authuser=1"></image>
+      </div>
+      <div class="hero date">
+        <div id="vara-container"></div>
+      </div>
+      <div class='rsvp-button-container'>
+        <a data-scroll href='#rsvp'>
+          <button class='rsvp-button'>Sign me up!</button>
+        </a>
+      </div>
+    </div>
+    <div class="container where" id='where'>
+      <div id="map" style="width: 100%; height: 100%;"></div>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rdTdzdWQwd2NtIn0.4_IhtN06SX3K3moZ1da-cg';
+        
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-104.5763702,39.467781],
+        zoom: 10
+        });
+        
+        var directions = 'https://www.google.com/maps/dir/Denver,+Colorado/Running+Creek+Manor,+4739+Co+Rd+166,+Elizabeth,+CO+80107/@39.6214154,-104.9357636,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x876b80aa231f17cf:0x118ef4f8278a36d6!2m2!1d-104.990251!2d39.7392358!1m5!1m1!1s0x876ceddc321d0f0b:0xf97644c7ac599aae!2m2!1d-104.5763702!2d39.467781!3e0'
+        
+        var website = 'http://runningcreekmanor.com/'
+        
+        var image = 'https://instagram.fapa1-2.fna.fbcdn.net/v/t51.2885-15/e35/67185697_492766678202608_4328725037811613457_n.jpg?_nc_ht=instagram.fapa1-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=-OZbiGfhPp8AX9-JGng&_nc_tp=18&oh=7bf54ce5ce28b37ff874ddb6d7d1c171&oe=5F8BBE87'
+        
+        var popup = new mapboxgl.Popup({anchor: 'center', offset: 25 }).setHTML(
+          `<div class="popup-container">
+            <a class='website-link-header' href=${website} target='_blank'>
+            Running Creek Manor
+            </a>
+            <img src=${image} />
+            <div class='thumb-links'>
+              <a href=${directions} target='_blank'>
+              Directions
+              </a>
+              <span>|</span>
+              <a href=${website} target='_blank'>Website
+            </div>
+          </div>`
+        );
+        
+        new mapboxgl.Marker()
+          .setLngLat([-104.5763702,39.467781])
+          .setPopup(popup)
+          .addTo(map);
+          
+        map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+        map.scrollZoom.disable();
+        
+      </script>
+    </div>
+    <div class="container accomodations" id='accommodations'>
+      <div class="hero">Accomodations</div>
+      <div class='hotel-search'>
+        <div class='search'>
+          <div>Airbnb</div>
+          <div>Hotels</div>
+        </div>
+        <div class='reccomended'>
+          ero
+          wpoef
+          wpoekf
+          w[epofk]
+    
+        </div>
+      </div>
+    </div>
+    <div class="container rsvp" id='rsvp'> 
+      <div class="hero">RSVP</div>
+      <div id="root"></div>
+      </div>
+    </div>
+    <!-- partial -->
+      <script  src="./script.js"></script>
+      
+    </body>
+    
+   
+    
+  </body>
+
+  <foot>
+    <script>
+      // Smooth scroll
+      const scroll = new SmoothScroll('a[href*="#"]')
+
+  
+  
+      // // RSVP count
+  
+      // const totalReservedText = document.querySelector('#total-reserved')
+      // const rsvp = document.querySelector('#count')
+      // const list = JSON.parse(query.get('list'))
+  
+      // totalReservedText.innerHTML = list.length
+  
+  
+      // const parties = document.querySelector('#parties')
+  
+      // Object.getOwnPropertyNames(window.guestList).forEach(party => {
+      //   let node = document.createElement('option')
+      //   node.setAttribute('value', party)
+      //   node.innerHTML = party
+      //   parties.appendChild(node)
+      // })
+  
+      // parties.addEventListener('change', e => {
+      //   const invitees = window.guestList[e.target.value]
+  
+      //   console.log(invitees)
+  
+      //   for (let i = 0; i < invitees.length; i++){
+      //     let checkbox = document.createElement('input')
+      //     let label =document.createElement('label')
+      //     let p = document.createElement('p')
+      //     checkbox.setAttribute('type', 'checkbox')
+      //     checkbox.setAttribute('id', invitees[i].name)
+      //     label.setAttribute('for', invitees[i].name)
+      //     label.innerHTML = invitees[i].name
+      //     p.appendChild(checkbox)
+      //     p.appendChild(label)
+      //     rsvp.appendChild(p)
+      //   }
+  
+      // })
+  
+      // // for (party in guestList) {
+      // //   let node = document.createElement('option')
+      // //   option.setAttribute('value', party.getOwnPropertyName())
+      // // }
+  
+    
+  
+      
+      
+    </script>
+    
+  </foot>
+</html>
