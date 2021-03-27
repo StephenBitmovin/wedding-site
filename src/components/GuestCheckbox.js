@@ -10,7 +10,7 @@ const GuestCheckbox = ({activeParty, handleCheck}) => {
         key={i}
         control={
           <Checkbox 
-            isChecked={guest.isChecked} 
+            checked={guest.isChecked} 
             onChange={handleCheck} 
             name={guest.name}
           />}

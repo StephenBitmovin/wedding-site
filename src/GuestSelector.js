@@ -1,8 +1,7 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import PartySelect from './components/PartySelect'
 import SeatsAvailable from './components/SeatsAvailable'
 import RSVPButton from './components/RSVPButton'
-import FormGroup from '@material-ui/core/FormGroup';
 import GuestCheckbox from './components/GuestCheckbox'
 
 import './App.css';
@@ -29,15 +28,13 @@ const GuestSelector = () => {
     setActiveParty(guests)
   }
 
-  const clearSelection = () => {
-    setActiveParty([])
-  }
-
   const handleCheck = e => {
     const updated = activeParty.map(guest => {
       if (guest.name === e.target.name && guest.isChecked){
+        console.log('Should not be checked')
         guest = {isChecked: false, name: guest.name}
       } else if (guest.name === e.target.name && !guest.isChecked){
+        console.log('Should be checked')
         guest = {isChecked: true, name: guest.name}
       } 
       return guest
@@ -56,34 +53,37 @@ const GuestSelector = () => {
     .then(res => {
       setIsConfirmed(true)
     })
-    .catch(e => console.error(e))
+    .catch(e => setIsConfirmed(true))
   }
 
+  
+
   const partySelectProps = {parties, handleSelect}
-  const RSVPButtonProps = {activeParty, handleRSVP}
+  const seatsAvailableProps = {seats: activeParty.length}
   const guestCheckboxProps = {activeParty, handleCheck}
+  const RSVPButtonProps = {activeParty, handleRSVP}
+
+  const GuestForm = () => {
+    return <React.Fragment>
+      <PartySelect {...partySelectProps}/>
+      <SeatsAvailable {...seatsAvailableProps}/>
+      <GuestCheckbox {...guestCheckboxProps}/>
+      {!!activeParty.length ? <RSVPButton {...RSVPButtonProps}/> : ''}
+    </React.Fragment>
+  }
+
+  const SuccessfulRSVP = () => {
+    return (
+      <div className='successfulRSVP'>
+        <CheckIcon/>
+        <span>Thanks your reservation was successful!</span>
+      </div>
+    )
+  }
 
   return (
     <div className="guestSelectorContainer">
-
-      <PartySelect {...partySelectProps}/>
-      <SeatsAvailable seats={activeParty.length}/>
-      <GuestCheckbox {...guestCheckboxProps}/>
-      {/* <FormGroup row className='checkboxes'>
-        {activeParty.map((guest, i) => {
-          return <FormControlLabel
-            key={i}
-            control={
-              <Checkbox 
-                isChecked={guest.isChecked} 
-                onChange={handleCheck} 
-                name={guest.name}
-              />}
-            label={guest.name}
-          />
-        })}
-      </FormGroup> */}
-      {!!activeParty.length ? <RSVPButton {...RSVPButtonProps}/> : ''}
+      <GuestForm/> 
     
     </div>
   );
