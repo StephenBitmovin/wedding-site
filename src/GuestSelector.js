@@ -4,9 +4,8 @@ import SeatsAvailable from './components/SeatsAvailable'
 import RSVPButton from './components/RSVPButton'
 import GuestCheckbox from './components/GuestCheckbox'
 
-import './App.css';
 import guestList from './guest-list'
-import CheckIcon from './icons/check.svg'
+import CheckIcon from './icons/CheckIcon'
 
 const parties = Object.getOwnPropertyNames(guestList)
   .map(party => ({
@@ -56,8 +55,6 @@ const GuestSelector = () => {
     .catch(e => setIsConfirmed(true))
   }
 
-  
-
   const partySelectProps = {parties, handleSelect}
   const seatsAvailableProps = {seats: activeParty.length}
   const guestCheckboxProps = {activeParty, handleCheck}
@@ -83,8 +80,7 @@ const GuestSelector = () => {
 
   return (
     <div className="guestSelectorContainer">
-      <GuestForm/> 
-    
+      {!isConfirmed ? <GuestForm/> : <SuccessfulRSVP/>}
     </div>
   );
 }

@@ -59,7 +59,7 @@
     </nav>
     <div class="container title" id='when'>
       <div class="hero-image-container">  
-        <image src="https://lh3.googleusercontent.com/9XZ6YgoLb7uNS_p2wE43dyZZ76s0hMLBfAK3NPgbtEFSy3sHntJIwSFFoDhugrQPkxP6YUbl7pDWtzKGtq6r2oplOrNUhklWwuu9NeXHqgGsJOoXWW8_4iS-bafZdihvboTgQKQO9GtMxV8Cg1TSS7i52IMyRPFZmUeaAePfPFTmB4PodfbdWDPlcC409y3qOeOY7gGNnEmbs_fAgAGNRO7baV4g1Gy6ZANKiSeFF7_EBBE80q9aLRs0p_iKZxepYtqibZn2mnbQlHed5qD5RBLWKVEf4t2-Qq9hm3yZI_vi6rQHYHys7xW0DxCEmE5JvdhHdai9UxJzg-7fafj1z22mYA6SCOQzQS8395D2d-eHOXcIrhEHs2SBLZ8RZcWg5EmY1T9pCMtFdIcNZnZ1KwRU33kbZBqmyTNXFW_NaQ0v_-ocOQXVlY_n68Fh9rP3fkAYQu3SYtnUSN01dxeY38FvD9Yhsfimr77I0PiCsCfvLc_Jw_L5yx6fw-mEjmuVlx36aaVC1Sz2g_pOFdYMV-ue_ua3ULUchKXHwP4Vr0zLvMtWzXb_M7MbId0hYcjNpT--NJ7VG__l82NrJw96B4rID0-mj4UmGocNVPPzgautYDv9-GRUYn2bxtPeFVLzi256aOtM-jzpZqgTpd9xXvzzUI59uAcVsL6sJ68R27PGacAOWQXse4gSJOqqUqigmdFvAnnv5EnYrmS9vMatvxxRew=w1600-h1067-no?authuser=1"></image>
+        <image src="https://i.imgur.com/oNNYtYA.jpg"></image>
       </div>
       <div class="hero date">
         <div id="vara-container"></div>
@@ -71,15 +71,29 @@
       </div>
     </div>
     <div class="container where" id='where'>
+      <div class="venue-overlay">
+        <div class='venue-card'>
+          <div class='venue-header'>Running Creek Manor</div>
+          <div class='venue-image-wrapper'>
+            <img src='https://i.imgur.com/UpRbhlV.jpg'/>
+          </div>
+          
+          <div class='venue-button-container'>
+            <a class='venue-directions-button' href=''>
+              Directions
+            </a>
+          </div>
+        </div>
+      </div>
       <div id="map" style="width: 100%; height: 100%;"></div>
       <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rdTdzdWQwd2NtIn0.4_IhtN06SX3K3moZ1da-cg';
         
         var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-104.5763702,39.467781],
-        zoom: 10
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: [-105.6868417,39.738612],
+          zoom: 8
         });
         
         var directions = 'https://www.google.com/maps/dir/Denver,+Colorado/Running+Creek+Manor,+4739+Co+Rd+166,+Elizabeth,+CO+80107/@39.6214154,-104.9357636,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x876b80aa231f17cf:0x118ef4f8278a36d6!2m2!1d-104.990251!2d39.7392358!1m5!1m1!1s0x876ceddc321d0f0b:0xf97644c7ac599aae!2m2!1d-104.5763702!2d39.467781!3e0'
@@ -107,10 +121,15 @@
         new mapboxgl.Marker()
           .setLngLat([-104.5763702,39.467781])
           .setPopup(popup)
-          .addTo(map);
+          .addTo(map)
           
-        map.addControl(new mapboxgl.NavigationControl(), 'top-left');
-        map.scrollZoom.disable();
+        map.addControl(new mapboxgl.NavigationControl(), 'top-left')
+        map.scrollZoom.disable()
+        map.on('load', () => map.resize())
+
+        // const map = document.querySelector('#map').offsetHeight
+
+        // map.setAttribute('height', map.offsetHeight)
         
       </script>
     </div>
