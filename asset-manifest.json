@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/github.io/wedding-site/static/css/main.3827eb8c.chunk.css",
-    "main.js": "/github.io/wedding-site/static/js/main.1dfed9da.chunk.js",
-    "main.js.map": "/github.io/wedding-site/static/js/main.1dfed9da.chunk.js.map",
-    "runtime-main.js": "/github.io/wedding-site/static/js/runtime-main.8d8e5c69.js",
-    "runtime-main.js.map": "/github.io/wedding-site/static/js/runtime-main.8d8e5c69.js.map",
-    "static/js/2.3b64f025.chunk.js": "/github.io/wedding-site/static/js/2.3b64f025.chunk.js",
-    "static/js/2.3b64f025.chunk.js.map": "/github.io/wedding-site/static/js/2.3b64f025.chunk.js.map",
-    "static/js/3.0757d935.chunk.js": "/github.io/wedding-site/static/js/3.0757d935.chunk.js",
-    "static/js/3.0757d935.chunk.js.map": "/github.io/wedding-site/static/js/3.0757d935.chunk.js.map",
-    "index.html": "/github.io/wedding-site/index.html",
-    "static/css/main.3827eb8c.chunk.css.map": "/github.io/wedding-site/static/css/main.3827eb8c.chunk.css.map",
-    "static/js/2.3b64f025.chunk.js.LICENSE.txt": "/github.io/wedding-site/static/js/2.3b64f025.chunk.js.LICENSE.txt"
+    "main.css": "/wedding-site/static/css/main.3827eb8c.chunk.css",
+    "main.js": "/wedding-site/static/js/main.1dfed9da.chunk.js",
+    "main.js.map": "/wedding-site/static/js/main.1dfed9da.chunk.js.map",
+    "runtime-main.js": "/wedding-site/static/js/runtime-main.232ab6d1.js",
+    "runtime-main.js.map": "/wedding-site/static/js/runtime-main.232ab6d1.js.map",
+    "static/js/2.3b64f025.chunk.js": "/wedding-site/static/js/2.3b64f025.chunk.js",
+    "static/js/2.3b64f025.chunk.js.map": "/wedding-site/static/js/2.3b64f025.chunk.js.map",
+    "static/js/3.0757d935.chunk.js": "/wedding-site/static/js/3.0757d935.chunk.js",
+    "static/js/3.0757d935.chunk.js.map": "/wedding-site/static/js/3.0757d935.chunk.js.map",
+    "index.html": "/wedding-site/index.html",
+    "static/css/main.3827eb8c.chunk.css.map": "/wedding-site/static/css/main.3827eb8c.chunk.css.map",
+    "static/js/2.3b64f025.chunk.js.LICENSE.txt": "/wedding-site/static/js/2.3b64f025.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d8e5c69.js",
+    "static/js/runtime-main.232ab6d1.js",
     "static/js/2.3b64f025.chunk.js",
     "static/css/main.3827eb8c.chunk.css",
     "static/js/main.1dfed9da.chunk.js"
