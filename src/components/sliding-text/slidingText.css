@@ -1,3 +1,54 @@
+.fadeInUp {
+  animation: fadeInUp;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-duration: .5s;
+  animation-fill-mode: both
+}
+
+.delay-0ds {
+  animation-delay: 0s;
+}
+
+.delay-1ds {
+  animation-delay: .1s;
+}
+
+.delay-2ds {
+  animation-delay: .2s;
+}
+
+.delay-3ds {
+  animation-delay: .3s;
+}
+
+.delay-4ds {
+  animation-delay: .4s;
+}
+
+.delay-5ds {
+  animation-delay: .5s;
+}
+
+.delay-6ds {
+  animation-delay: .6s;
+}
+
+.delay-7ds {
+  animation-delay: .7s;
+}
+
+.delay-8ds {
+  animation-delay: .8s;
+}
+
+.delay-9ds {
+  animation-delay: .9s;
+}
+
+/* .delay-10ds {
+  animation-delay: 1s;
+} */
 
 
 @keyframes fadeInUp {

@@ -1,4 +1,4 @@
-Globals
+/* Globals */
 
 @font-face {
   font-family: 'Brandon Grot';
@@ -12,6 +12,15 @@ Globals
 body {
   color: var(--main-brown);
 }
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
 
 nav {
   position: fixed;
@@ -696,6 +705,7 @@ h1, h2, h3, h4, h5, h6 {
 .fontLarge {
   font-size: 3em;
 }
+
 
 div, p, span {
   font-size: 'Brandon Grot';
