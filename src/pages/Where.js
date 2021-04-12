@@ -12,7 +12,6 @@ const Where = () => {
     <SlidingText 
       tag='h1'
       text='Running Creek Manor'
-      animation
     />
   </div>
 }
