@@ -21,6 +21,9 @@ h2 {
   font-size: 2em;
 }
 
+h3 {
+  font-size: 1em;
+}
 
 nav {
   position: fixed;
@@ -73,19 +76,32 @@ nav {
 
 /* --Animations */
 
-/* When
+/* When */
 
-Where
+/* Where */
 
-Our Story
+.directionsWebsite > * {
+ margin: 5px
+}
 
-Accommodations
+.directionsWebsite > a {
+  text-decoration: none;
+  color: var(--main-brown)
+}
 
-Things To Do
+.directionsWebsite > a:hover {
+  color: black
+}
 
-Registry
+/* Our Story */
 
-RSVP  */
+/* Accommodations */
+
+/* Things To Do */
+
+/* Registry */
+
+/* RSVP */
 
 #root > div > div.mainContentContainer > div > div.guestSelectorContainer > button:enabled {
   background-color: var(--main-brown);
