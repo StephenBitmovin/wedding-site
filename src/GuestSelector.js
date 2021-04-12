@@ -72,7 +72,9 @@ const GuestSelector = () => {
   const SuccessfulRSVP = () => {
     return (
       <div className='successfulRSVP'>
-        <CheckIcon/>
+        <div className='checkIconWrapper'>
+          <CheckIcon />
+        </div>
         <span>Thanks your reservation was successful!</span>
       </div>
     )
