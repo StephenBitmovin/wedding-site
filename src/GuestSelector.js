@@ -84,7 +84,7 @@ const GuestSelector = () => {
     <div className="guestSelectorContainer">
       {!isConfirmed ? <GuestForm/> : <SuccessfulRSVP/>}
     </div>
-  );
+  )
 }
 
 export default GuestSelector;
