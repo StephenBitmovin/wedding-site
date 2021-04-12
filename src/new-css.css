@@ -713,7 +713,7 @@ div, p, span {
   font-size: 'Brandon Grot';
 }
 
-.homeContainer {
+.columnContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -746,6 +746,34 @@ div, p, span {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.RSVPButton {
+  flex-grow: 1;
+  margin-top: 10px;
+}
+
+.RSVPButton .linkButton{
+  
+  background-color: var(--main-brown);
+  border: 1px white solid;
+  color: white;
+  transition: color .5s, background-color .5s, border .5s;
+}
+
+.RSVPButton .linkButton:hover {
+  background-color: white;
+  color: var(--main-brown);
+  border: 1px solid var(--main-brown)
+}
+
+.RSVPButton .linkButton:active {
+  
+}
+
+.RSVPButton button {
+  width: 100%;
 }
 
 .cardContent .buttonBar {

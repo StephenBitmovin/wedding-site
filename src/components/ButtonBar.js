@@ -43,11 +43,11 @@ const ButtonBar = () => {
         </Switch>
       </div>
       <div className='buttonBar'>
-        {/* <Link to='/'>
+        <Link to='/'>
           <button className='linkButton'>
             When
           </button>
-        </Link> */}
+        </Link>
         <Link to='/where'>
           <button className='linkButton'>
             Where
@@ -55,7 +55,7 @@ const ButtonBar = () => {
         </Link>
         <Link to='/about-us'>
           <button className='linkButton'>
-            About Us
+            Our Story
           </button>
         </Link>
         <Link to='/accomodations'>
@@ -73,7 +73,7 @@ const ButtonBar = () => {
             Registry
           </button>
         </Link>
-        <Link to='/RSVP'>
+        <Link to='/RSVP' className='RSVPButton'>
           <button className='linkButton'>
             RSVP
           </button>
