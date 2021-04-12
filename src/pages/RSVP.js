@@ -1,18 +1,27 @@
 import React from 'react'
-import GuestCheckbox from '../components/GuestCheckbox'
-import PartySelect from '../components/PartySelect'
-import RSVPButton from '../components/RSVPButton'
-import SeatsAvailable from '../components/SeatsAvailable'
+import SlidingText from '../components/sliding-text/SlidingText'
 import GuestSelector from '../GuestSelector'
 
 const RSVP = () => {
   return <div className='guestSelectorWrapper flexColumn RSVP'>
-    <div className='RSVPHeadline'>
+    {/* <div className='RSVPHeadline'>
       <h1>
       Reserve your spot
       </h1>
-    </div>
-    <GuestSelector />
+    </div> */}
+    <SlidingText 
+      tag='h1'
+      text='Reserve Your Spot'
+      delay='0'
+    />
+    <SlidingText 
+      tag='component'
+      delay='1'
+    >
+      <GuestSelector />
+    </SlidingText>
+
+    {/* <GuestSelector /> */}
   </div>
 }
 

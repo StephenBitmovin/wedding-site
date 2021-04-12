@@ -2,11 +2,12 @@ import React from 'react'
 import './slidingText.css'
 
 /**
- * @param {string} tag - Tag name you wish to animate
+ * @param {string} tag - Tag name you wish to animate or 'component'
  * @param {string} text - Text you wish to animate
  * @param {string} animation - Animation you wish to use
  * @param {string} delay - Animation delay in seconds ie. '.5s' up to .9
  * @param {string} url - Optional href if this is a link
+ * @param {object} component - A react component 
  */
 
 const SlidingText = ({
@@ -14,7 +15,8 @@ const SlidingText = ({
   text = 'Add text dummy!', 
   animation = 'fadeInUp', 
   delay = '0.5s',
-  url = 'google.com/add-an-href'
+  url = 'google.com/add-an-href',
+  children
 }) => {
 
   let line
@@ -47,8 +49,15 @@ const SlidingText = ({
     case 'a': 
       line = <a href={url} className={`${animation} delay-${delay}ds`}>{text}</a>
       break;
+    case 'component':
+      line = <div
+        className={`${animation} delay-${delay}ds`}
+      >
+        {children}
+      </div>
+      break;
     default:
-      line = <h1 className={`.${animation} .delay-${delay}ds`}>Add Tag Param Dummy</h1>
+      line = <h1>Add Tag Param Dummy</h1>
       break;
   }
 
