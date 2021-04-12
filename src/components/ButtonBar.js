@@ -10,6 +10,9 @@ import Home from '../pages/Home'
 import Where from '../pages/Where'
 import Registry from '../pages/Registry'
 import RSVP from '../pages/RSVP'
+import OurStory from '../pages/OurStory'
+import Accommodations from '../pages/Accommodations'
+import ThingsToDo from '../pages/ThingsToDo'
 
 const ButtonBar = () => {
   return <Router>
@@ -22,6 +25,15 @@ const ButtonBar = () => {
           <Route path="/where">
             <Where />
           </Route>
+          <Route path="/our-story">
+            <OurStory />
+          </Route>
+          <Route path="/accommodations">
+            <Accommodations />
+          </Route>
+          <Route path="/things-to-do">
+            <ThingsToDo />
+          </Route>
           <Route path="/registry">
             <Registry />
           </Route>
@@ -31,14 +43,29 @@ const ButtonBar = () => {
         </Switch>
       </div>
       <div className='buttonBar'>
-        <Link to='/'>
+        {/* <Link to='/'>
           <button className='linkButton'>
             When
           </button>
-        </Link>
+        </Link> */}
         <Link to='/where'>
           <button className='linkButton'>
             Where
+          </button>
+        </Link>
+        <Link to='/about-us'>
+          <button className='linkButton'>
+            About Us
+          </button>
+        </Link>
+        <Link to='/accomodations'>
+          <button className='linkButton'>
+            Accommodations
+          </button>
+        </Link>
+        <Link to='/things-to-do'>
+          <button className='linkButton'>
+            Things To Do
           </button>
         </Link>
         <Link to='/registry'>
