@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/wedding-site/static/css/main.0d921624.chunk.css",
-    "main.js": "/wedding-site/static/js/main.98897d0e.chunk.js",
-    "main.js.map": "/wedding-site/static/js/main.98897d0e.chunk.js.map",
+    "main.css": "/wedding-site/static/css/main.50a83c97.chunk.css",
+    "main.js": "/wedding-site/static/js/main.bc7f3db7.chunk.js",
+    "main.js.map": "/wedding-site/static/js/main.bc7f3db7.chunk.js.map",
     "runtime-main.js": "/wedding-site/static/js/runtime-main.f1a5139d.js",
     "runtime-main.js.map": "/wedding-site/static/js/runtime-main.f1a5139d.js.map",
     "static/css/2.5d0bae80.chunk.css": "/wedding-site/static/css/2.5d0bae80.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.74606681.chunk.js.map": "/wedding-site/static/js/3.74606681.chunk.js.map",
     "index.html": "/wedding-site/index.html",
     "static/css/2.5d0bae80.chunk.css.map": "/wedding-site/static/css/2.5d0bae80.chunk.css.map",
-    "static/css/main.0d921624.chunk.css.map": "/wedding-site/static/css/main.0d921624.chunk.css.map",
+    "static/css/main.50a83c97.chunk.css.map": "/wedding-site/static/css/main.50a83c97.chunk.css.map",
     "static/js/2.0f70be56.chunk.js.LICENSE.txt": "/wedding-site/static/js/2.0f70be56.chunk.js.LICENSE.txt",
     "static/media/new-css.css": "/wedding-site/static/media/brandon-grot.304aefb9.ttf",
     "static/media/running-creek.99e4275d.png": "/wedding-site/static/media/running-creek.99e4275d.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.f1a5139d.js",
     "static/css/2.5d0bae80.chunk.css",
     "static/js/2.0f70be56.chunk.js",
-    "static/css/main.0d921624.chunk.css",
-    "static/js/main.98897d0e.chunk.js"
+    "static/css/main.50a83c97.chunk.css",
+    "static/js/main.bc7f3db7.chunk.js"
   ]
 }
