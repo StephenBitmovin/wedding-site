@@ -1,0 +1,13 @@
+.fontSize25 {
+  font-size: 1.5em
+}
+
+a {
+  font-family: 'EB Garamond', serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(70, 70, 70);
+  text-decoration: underline;
+}

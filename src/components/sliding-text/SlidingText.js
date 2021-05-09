@@ -8,6 +8,7 @@ import './slidingText.css'
  * @param {string} delay - Animation delay in seconds ie. '.5s' up to .9
  * @param {string} url - Optional href if this is a link
  * @param {object} component - A react component 
+ * @param {string} additionalClasses - List of additional classes to add
  */
 
 const SlidingText = ({
@@ -15,7 +16,8 @@ const SlidingText = ({
   text = 'Add text dummy!', 
   animation = 'fadeInUp', 
   delay = '0.5s',
-  url = 'google.com/add-an-href',
+  url = 'https://google.com/search?q=add-an-href',
+  additionalClasses = '',
   children
 }) => {
 
@@ -47,7 +49,7 @@ const SlidingText = ({
       line = <span className={`${animation} delay-${delay}ds`}>{text}</span>
       break;
     case 'a': 
-      line = <a href={url} className={`${animation} delay-${delay}ds`}>{text}</a>
+      line = <a target='_blank' href={url} className={`${animation} delay-${delay}ds ${additionalClasses}`}>{text}</a>
       break;
     case 'component':
       line = <div

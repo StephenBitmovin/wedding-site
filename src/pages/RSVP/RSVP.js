@@ -1,6 +1,6 @@
 import React from 'react'
-import SlidingText from '../components/sliding-text/SlidingText'
-import GuestSelector from '../GuestSelector'
+import SlidingText from '../../components/sliding-text/SlidingText'
+import GuestSelector from '../../GuestSelector'
 
 const RSVP = () => {
   return <div className='guestSelectorWrapper flexColumn RSVP'>

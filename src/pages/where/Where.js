@@ -1,7 +1,7 @@
 import React from 'react'
-import SlideUpHeaderImage from '../components/slideUpHeaderImage/SlideUpHeaderImage'
-import SlidingText from '../components/sliding-text/SlidingText'
-import rcmHeader from '../images/running-creek.png'
+// import SlideUpHeaderImage from '../../components/slideUpHeaderImage/SlideUpHeaderImage'
+import SlidingText from '../../components/sliding-text/SlidingText'
+// import rcmHeader from '../images/running-creek.png'
 
 const Where = () => {
 
@@ -21,12 +21,12 @@ const Where = () => {
     />
     <SlidingText 
       tag='p'
-      text='Information'
-      delay='3'
+      text='Our venue is an outdoor paradise with a lake and plenty of space to prevent the spread of PANDEMIC'
+      delay='1'
     />
     <SlidingText 
       tag='component'
-      delay='5'
+      delay='2'
     >
       <DirectionsWebsite />
     </SlidingText>

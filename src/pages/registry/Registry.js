@@ -2,11 +2,12 @@ import React from 'react'
 
 const Registry = () => {
   return <div className='columnContainer'>
-    <h1 className='fontLarge'>Buy Us Shit</h1>
+    <h1 className='fontLarge'>Registry</h1>
     <a href=''>Adventures</a>
     <a href=''>Things</a>
     <a href=''>Honeymoon</a>
     <a href=''>Full List</a>
+    https://registry.theknot.com/mikayla-martz-stephen-florian-july-2021/41402941
 
     {/* <a href=''>Adventures</a>
     <a href=''>Things</a>

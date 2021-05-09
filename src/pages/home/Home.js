@@ -1,6 +1,6 @@
 import React from 'react'
-import ButtonBar from '../components/ButtonBar'
-import SlidingText from '../components/sliding-text/SlidingText'
+import ButtonBar from '../../components/button-bar/ButtonBar'
+import SlidingText from '../../components/sliding-text/SlidingText'
 
 const Home = () => {
   return <div className='columnContainer'>
@@ -11,8 +11,8 @@ const Home = () => {
       delay='0'
     />
     <SlidingText 
-      tag='p'
-      text='Bring your butt to our wedding'
+      tag='h4'
+      text='Mikayla & Stephen cordially invite you to our wedding on'
       delay='1'
     />
     <SlidingText 
