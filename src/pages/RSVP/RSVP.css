@@ -1,0 +1,22 @@
+:root {
+  --main-brown: #735f39;
+}
+
+/* .MuiButtonBase-root {
+  color: var(--main-brown)
+} */
+
+.MuiButton-root {
+  background-color: #735f39;
+}
+
+.MuiButton-root:hover {
+  background-color: white !important;
+  border-color: #735f39;
+  color: #735f39;
+}
+
+
+/* .MuiTouchRipple-root {
+  background-color: var(--main-brown);
+} */

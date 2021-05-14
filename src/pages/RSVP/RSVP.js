@@ -2,6 +2,10 @@ import React from 'react'
 import SlidingText from '../../components/sliding-text/SlidingText'
 import GuestSelector from '../../GuestSelector'
 
+import './RSVP.css'
+
+import { createMuiTheme } from '@material-ui/core/styles';
+
 const RSVP = () => {
   return <div className='guestSelectorWrapper flexColumn RSVP'>
     {/* <div className='RSVPHeadline'>

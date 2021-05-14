@@ -36,14 +36,14 @@ const ButtonBar = () => {
       <Route path="/our-story">
         <OurStory />
       </Route>
+      {/* <Route path="/registry">
+        <Registry />
+      </Route> */}
       <Route path="/accommodations">
         <Accommodations />
       </Route>
       <Route path="/things-to-do">
         <ThingsToDo />
-      </Route>
-      <Route path="/registry">
-        <Registry />
       </Route>
       <Route path="/RSVP">
         <RSVP />
@@ -62,14 +62,14 @@ const ButtonBar = () => {
         <Link to='/our-story' onClick={setMenuState}>
           Our Story
         </Link>
+        <Link to='/registry' onClick={setMenuState}>
+          Registry
+        </Link>
         <Link to='/accommodations' onClick={setMenuState}>
           Accommodations
         </Link>
         <Link to='/things-to-do' onClick={setMenuState}>
           Things To Do
-        </Link>
-        <Link to='/registry' onClick={setMenuState}>
-          Registry
         </Link>
         <Link to='/RSVP' className='mobileRSVPButton' onClick={setMenuState}>
           RSVP
@@ -88,6 +88,11 @@ const ButtonBar = () => {
             Where
           </button>
         </Link>
+        <Link to={{pathname: 'https://registry.theknot.com/mikayla-martz-stephen-florian-july-2021/41402941'}} target='_blank'>
+          <button className='linkButton'>
+            Registry
+          </button>
+        </Link>
         <Link to='/our-story'>
           <button className='linkButton'>
             Our Story
@@ -101,11 +106,6 @@ const ButtonBar = () => {
         <Link to='/things-to-do'>
           <button className='linkButton'>
             Things To Do
-          </button>
-        </Link>
-        <Link to='/registry'>
-          <button className='linkButton'>
-            Registry
           </button>
         </Link>
         <Link to='/RSVP' className='RSVPButton'>
