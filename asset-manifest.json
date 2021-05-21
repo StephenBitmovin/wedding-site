@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/wedding-site/static/css/main.a127f0e9.chunk.css",
-    "main.js": "/wedding-site/static/js/main.99cc5c61.chunk.js",
-    "main.js.map": "/wedding-site/static/js/main.99cc5c61.chunk.js.map",
+    "main.css": "/wedding-site/static/css/main.be7b9f2a.chunk.css",
+    "main.js": "/wedding-site/static/js/main.cbc0b6ec.chunk.js",
+    "main.js.map": "/wedding-site/static/js/main.cbc0b6ec.chunk.js.map",
     "runtime-main.js": "/wedding-site/static/js/runtime-main.51077720.js",
     "runtime-main.js.map": "/wedding-site/static/js/runtime-main.51077720.js.map",
     "static/css/2.86c83df3.chunk.css": "/wedding-site/static/css/2.86c83df3.chunk.css",
-    "static/js/2.5e35d1be.chunk.js": "/wedding-site/static/js/2.5e35d1be.chunk.js",
-    "static/js/2.5e35d1be.chunk.js.map": "/wedding-site/static/js/2.5e35d1be.chunk.js.map",
+    "static/js/2.424726c0.chunk.js": "/wedding-site/static/js/2.424726c0.chunk.js",
+    "static/js/2.424726c0.chunk.js.map": "/wedding-site/static/js/2.424726c0.chunk.js.map",
     "index.html": "/wedding-site/index.html",
     "static/css/2.86c83df3.chunk.css.map": "/wedding-site/static/css/2.86c83df3.chunk.css.map",
-    "static/css/main.a127f0e9.chunk.css.map": "/wedding-site/static/css/main.a127f0e9.chunk.css.map",
-    "static/js/2.5e35d1be.chunk.js.LICENSE.txt": "/wedding-site/static/js/2.5e35d1be.chunk.js.LICENSE.txt",
+    "static/css/main.be7b9f2a.chunk.css.map": "/wedding-site/static/css/main.be7b9f2a.chunk.css.map",
+    "static/js/2.424726c0.chunk.js.LICENSE.txt": "/wedding-site/static/js/2.424726c0.chunk.js.LICENSE.txt",
     "static/media/new-css.css": "/wedding-site/static/media/brandon-grot.304aefb9.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.51077720.js",
     "static/css/2.86c83df3.chunk.css",
-    "static/js/2.5e35d1be.chunk.js",
-    "static/css/main.a127f0e9.chunk.css",
-    "static/js/main.99cc5c61.chunk.js"
+    "static/js/2.424726c0.chunk.js",
+    "static/css/main.be7b9f2a.chunk.css",
+    "static/js/main.cbc0b6ec.chunk.js"
   ]
 }
