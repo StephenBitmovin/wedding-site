@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/wedding-site/static/css/main.10cb26b6.chunk.css",
-    "main.js": "/wedding-site/static/js/main.012fd710.chunk.js",
-    "main.js.map": "/wedding-site/static/js/main.012fd710.chunk.js.map",
-    "runtime-main.js": "/wedding-site/static/js/runtime-main.7a25daf3.js",
-    "runtime-main.js.map": "/wedding-site/static/js/runtime-main.7a25daf3.js.map",
-    "static/css/2.5d0bae80.chunk.css": "/wedding-site/static/css/2.5d0bae80.chunk.css",
-    "static/js/2.1c471444.chunk.js": "/wedding-site/static/js/2.1c471444.chunk.js",
-    "static/js/2.1c471444.chunk.js.map": "/wedding-site/static/js/2.1c471444.chunk.js.map",
-    "static/js/3.81ed5949.chunk.js": "/wedding-site/static/js/3.81ed5949.chunk.js",
-    "static/js/3.81ed5949.chunk.js.map": "/wedding-site/static/js/3.81ed5949.chunk.js.map",
+    "main.css": "/wedding-site/static/css/main.be7b9f2a.chunk.css",
+    "main.js": "/wedding-site/static/js/main.cbc0b6ec.chunk.js",
+    "main.js.map": "/wedding-site/static/js/main.cbc0b6ec.chunk.js.map",
+    "runtime-main.js": "/wedding-site/static/js/runtime-main.51077720.js",
+    "runtime-main.js.map": "/wedding-site/static/js/runtime-main.51077720.js.map",
+    "static/css/2.86c83df3.chunk.css": "/wedding-site/static/css/2.86c83df3.chunk.css",
+    "static/js/2.424726c0.chunk.js": "/wedding-site/static/js/2.424726c0.chunk.js",
+    "static/js/2.424726c0.chunk.js.map": "/wedding-site/static/js/2.424726c0.chunk.js.map",
     "index.html": "/wedding-site/index.html",
-    "static/css/2.5d0bae80.chunk.css.map": "/wedding-site/static/css/2.5d0bae80.chunk.css.map",
-    "static/css/main.10cb26b6.chunk.css.map": "/wedding-site/static/css/main.10cb26b6.chunk.css.map",
-    "static/js/2.1c471444.chunk.js.LICENSE.txt": "/wedding-site/static/js/2.1c471444.chunk.js.LICENSE.txt",
+    "static/css/2.86c83df3.chunk.css.map": "/wedding-site/static/css/2.86c83df3.chunk.css.map",
+    "static/css/main.be7b9f2a.chunk.css.map": "/wedding-site/static/css/main.be7b9f2a.chunk.css.map",
+    "static/js/2.424726c0.chunk.js.LICENSE.txt": "/wedding-site/static/js/2.424726c0.chunk.js.LICENSE.txt",
     "static/media/new-css.css": "/wedding-site/static/media/brandon-grot.304aefb9.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.7a25daf3.js",
-    "static/css/2.5d0bae80.chunk.css",
-    "static/js/2.1c471444.chunk.js",
-    "static/css/main.10cb26b6.chunk.css",
-    "static/js/main.012fd710.chunk.js"
+    "static/js/runtime-main.51077720.js",
+    "static/css/2.86c83df3.chunk.css",
+    "static/js/2.424726c0.chunk.js",
+    "static/css/main.be7b9f2a.chunk.css",
+    "static/js/main.cbc0b6ec.chunk.js"
   ]
 }

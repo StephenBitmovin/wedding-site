@@ -15,12 +15,14 @@ ReactDOM.render(
       </div> */}
     </div>
     <div className='cardContainer'>
-      <div className='smallSection'></div>
-      <div className='card'>
-        <div id='root'>
-        <ButtonBar/>
+      {/* <div> */}
+        <div className='smallSection'></div>
+        <div className='card'>
+          <div id='root'>
+          <ButtonBar/>
+          </div>
         </div>
-      </div>
+      {/* </div> */}
       <div className='smallSection'></div>
     </div>
   </React.StrictMode>,

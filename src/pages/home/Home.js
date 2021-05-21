@@ -7,8 +7,7 @@ dayjs.extend(relativeTime)
 
 const Home = () => {
 
-  const weddingDate = dayjs('7/10/21').diff(dayjs(), 'days')
-  console.log(weddingDate)
+  const weddingIsThisMany = dayjs('7/10/21').diff(dayjs(), 'days')
 
   return <div className='columnContainer'>
     {/* <h1 className='fontLarge'>Mikayla & Stephen</h1> */}
@@ -35,7 +34,7 @@ const Home = () => {
 
     <SlidingText 
       tag='h1'
-      text={`${weddingDate} days from today`}
+      text={`${weddingIsThisMany} days from today`}
       delay='4'
     />
 

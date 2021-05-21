@@ -1,0 +1,25 @@
+.thingsToDo h2, .thingsToDo h3, .thingsToDo h4 {
+  margin: .5em
+}
+
+.thingsToDo h1 {
+  margin-bottom: .1em
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 .5em
+}
+
+.listContainer a {
+  width: initial;
+  margin: 5px;
+  font-size: 1.1em
+}
+
+.listContainer span {
+  width: initial;
+  font-size: 1.1em;
+}

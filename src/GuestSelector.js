@@ -7,6 +7,8 @@ import GuestCheckbox from './components/GuestCheckbox'
 import guestList from './guest-list'
 import CheckIcon from './icons/CheckIcon'
 
+import addParty from './database/db'
+
 const parties = Object.getOwnPropertyNames(guestList)
   .map(party => ({
     label: party, 
@@ -42,13 +44,15 @@ const GuestSelector = () => {
   }
 
   const handleRSVP = () => {
-    const body = {[activePartyName]: activeParty.filter(guest => guest.isChecked)}
-    console.log(body)
-    fetch('http://localhost:5050/rsvp', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(body)
-    })
+    const party = {[activePartyName]: activeParty.filter(guest => guest.isChecked)}
+    addParty(party)
+
+    // console.log(body)
+    // fetch('http://localhost:5050/rsvp', {
+    //   method: 'POST',
+    //   headers: {'Content-Type': 'application/json'},
+    //   body: JSON.stringify(body)
+    // })
     .then(res => {
       setIsConfirmed(true)
     })

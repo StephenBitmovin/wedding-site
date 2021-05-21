@@ -1,8 +1,17 @@
 import React from 'react'
 import SlidingText from '../../components/sliding-text/SlidingText'
 
+import CloseRestaurants from './components/CloseRestaurants'
+import CloseBreweries from './components/CloseBreweries'
+import CloseActivities from './components/CloseActivities'
+import FurtherRestaurants from './components/FurtherRestaurants'
+import FurtherBreweries from './components/FurtherBreweries'
+import FurtherActivities from './components/FurtherActivities'
+
+import './thingsToDo.css'
+
 const ThingsToDo = () => {
-  return <div className='columnContainer'>
+  return <div className='columnContainer thingsToDo'>
     <SlidingText
       tag='h1'
       text='Things To Do'
@@ -13,14 +22,16 @@ const ThingsToDo = () => {
       text='Close To Venue'
       delay='1'
     />
-      Food
-      Breweries
-      Activities
+    <CloseRestaurants />
+    <CloseBreweries />
+    <CloseActivities />
+
     <SlidingText
       tag='h3'
       text='A Little Further Away'
-      delay='1'
+      delay='2'
     />
+    
       Food
       Breweries
       Activities
