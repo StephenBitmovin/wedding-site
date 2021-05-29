@@ -717,6 +717,11 @@ body {
   justify-content: space-around;
   align-items: center;
   /* opacity: 80%; */
+  background: url(https://i.imgur.com/7S8kHkP.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .card {
@@ -804,6 +809,29 @@ div, p, span {
 @media (max-width: 1422px) {
   .buttonBar {
     display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .buttonBar {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.9em!important;
+  }
+
+  .card {
+    width: 95%!important;
+    height: 100%!important;
+  }
+
+  .guestSelectorWrapper h1 {
+    font-size: 1.3em!important;
+  }
+
+  .guestSelectorContainer {
+    width: 90%!important;
   }
 }
 

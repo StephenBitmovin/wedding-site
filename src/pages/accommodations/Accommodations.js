@@ -4,7 +4,7 @@ import './accommodations.css'
 
 const Accommodations = () => {
   return <div className='columnContainer'>
-    /* <SlidingText 
+    <SlidingText 
       tag='h1'
       text='Accommodations'
       delay='0'
@@ -42,7 +42,7 @@ const Accommodations = () => {
         tag='a'
         text='Holiday Inn Parker'
         delay='2'
-        url='https://www.marriott.com/hotels/travel/denpk-springhill-suites-denver-parker/'
+        url='https://www.holidayinn.com/redirect?path=hd&brandCode=HI&localeCode=en&regionCode=1&hotelCode=denpr&_PMID=99801505&GPC=MFW&cn=no&viewfullsite=true'
         additionalClasses='fontSize25'
       />
     </h4>

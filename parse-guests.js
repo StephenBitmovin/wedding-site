@@ -1,6 +1,6 @@
 const csvtojson = require('csvtojson')
 const fs = require('fs')
-const csv = './guest-list.csv'
+const csv = './my-guest-list.csv'
 
 csvtojson().fromFile(csv)
   .then(json => {
@@ -20,7 +20,7 @@ csvtojson().fromFile(csv)
       return curr
     },{})
 
-    fs.writeFileSync('./guest-list.js', `const guestList = ${JSON.stringify(list)} \nexport default guestList`)
+    fs.writeFileSync('./src/guest-list.js', `const guestList = ${JSON.stringify(list)} \nexport default guestList`)
 
   })
 

@@ -60,7 +60,7 @@ const Where = () => {
     />
     <SlidingText 
       tag='p'
-      text='Our venue is an outdoor paradise with a lake and plenty of space to prevent the spread of PANDEMIC'
+      text='Running Creek Manor is a tranquil waterfront wedding venue, with wide open fields, gardens, and expansive trees.'
       delay='1'
     />
     <SlidingText 

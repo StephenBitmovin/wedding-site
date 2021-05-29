@@ -21,7 +21,7 @@ firebase.initializeApp(config)
 const database = firebase.database()
 
 const addParty = party => {
-  return firebase.database().ref('parties/').set({
+  return firebase.database().ref(`parties/${Object.getOwnPropertyNames(party)[0]}`).set({
     ...party
   })
 }

@@ -26,5 +26,5 @@
 }
 
 .where + .cardContent > .mainContentContainer {
-  display: none;
+  /* display: none; */
 }
