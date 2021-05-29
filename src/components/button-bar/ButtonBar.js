@@ -88,7 +88,7 @@ const ButtonBar = () => {
             Where
           </button>
         </Link>
-        <Link to={{pathname: 'https://registry.theknot.com/mikayla-martz-stephen-florian-july-2021/41402941'}} target='_blank'>
+        <Link to={{pathname: 'https://registry.theknot.com/mikayla-martz-stephen-florian-july-2021/41402941'}} target='about:blank'>
           <button className='linkButton'>
             Registry
           </button>

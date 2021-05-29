@@ -824,14 +824,20 @@ div, p, span {
   .card {
     width: 95%!important;
     height: 100%!important;
+    margin: 5px;
+
   }
 
   .guestSelectorWrapper h1 {
-    font-size: 1.3em!important;
+    font-size: 1.9em!important;
   }
 
   .guestSelectorContainer {
     width: 90%!important;
+  }
+
+  .smallSection {
+    width: 90%;
   }
 }
 
