@@ -35,8 +35,10 @@ const MobileMenu = () => {
       <Link to='/things-to-do'>
         Things To Do
       </Link>
-      <Link to='/registry'>
-        Registry
+      <Link to={{pathname: 'https://registry.theknot.com/mikayla-martz-stephen-florian-july-2021/41402941'}} target='about:blank'>
+        <button className='linkButton'>
+          Registry
+        </button>
       </Link>
       <Link to='/RSVP' className='mobileRSVPButton'>
         RSVP
